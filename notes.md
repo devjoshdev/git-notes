@@ -103,4 +103,10 @@
     + Then `git merge --continue`
 
 ## What are remotes? 
-+ (TODO: 1:02:08)
++ A repository can be hosted on a server or some other location on a network/computer
++ `git remote` shows the names of the remotes associated with the current repository
++ `git remote add [name] [URL]` will make local repo aware of the remote
++ `git push [remote name] [local branch]:[remote branch]` sends changes from your computer to the remote
++ `git clone [URL] [where to clone]` will grab code from the specified remote for you to use locally
++ `git fetch [remote]` will grab the latest code from a remote repo but won't integrate the updated code into your local repo, will need to do a `git merge` to integrate the changes
++ `git pull [remote]` will grab the latest code from a remote repo and integrate the changes into your local repo, effectively acting as a `git fetch` followed by a `git merge`
